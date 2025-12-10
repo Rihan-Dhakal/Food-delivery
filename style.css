@@ -64,6 +64,16 @@ img{
     display: block;
 }
 
+.p-top{
+    padding-top: 10rem;
+}
+.text-center{
+    text-align: center;
+}
+.mt-4{
+    margin-top: 4rem;
+}
+
 
 
 /* HEADER STYLING */
@@ -124,7 +134,8 @@ img{
     min-height: calc(98vh -14vh);
 }
 .hero-content,
-.hero-image{
+.hero-image,
+.service-card{
     flex: 1;
     flex-basis: 300px;
 }
@@ -160,6 +171,73 @@ p{
     background-color: var(--lead);
     color: var(--purewhite);
 }
+
+/* SECTION 01 */
+h5{
+    font-size: 1.2rem;
+    letter-spacing: .2rem;
+    color: var(--gold);
+    text-transform: uppercase;
+
+}
+h2{
+    font-size: 3.6rem;
+    color: var(--lead);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+h3{
+    font-size: 3rem;
+    color: var(--lead);
+    text-transform: uppercase;
+}
+
+.service-card h3{
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+
+/* SECTION 02 */
+
+.order-cart{
+    background: var(--eyeball);
+     border-radius: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.07) 8px 8px 10px,
+     rgba(0, 0, 0, 0.07) 8px 8px 10px inset;
+      border: .1rem solid var(--gold);
+      flex: 1;
+      flex-basis: 300px;
+}
+
+
+
+.order-cart img{
+    width: 15rem;
+    filter: drop-shadow(rgba(0, 0, 0, 0.238) 0 10px 10px );
+}
+
+h4{
+    font-size: 1.7rem;
+    color: var(--lead);
+}
+.order-cart .price{
+    font-size: 1.5rem;
+    color: var(--gold);
+    padding: 1.3rem 0 1.2rem 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -236,6 +314,8 @@ p{
 }
 
 /* SECTION STYLING */
+
+/* HERO STYLING */
 h1{
     font-size: 3.5rem;
 }
@@ -248,4 +328,11 @@ h1{
 .gap-4{
     gap: 4rem;
 }
+
+/* SERVICE 01 */
+ h2{
+    font-size: 3rem;}
+
+
+
 }

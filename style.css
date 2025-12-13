@@ -91,6 +91,12 @@ img {
 .mt-one-half {
     margin-top: 1.5rem;
 }
+.ml-2{
+    margin-left: 2rem;
+}
+.gap-point-five{
+    gap: .5rem;
+}
 
 
 
@@ -233,7 +239,7 @@ h3 {
 
 /* SECTION 02 */
 
-.order-cart {
+.order-card {
     background: var(--eyeball);
     border-radius: 2rem;
     box-shadow: rgba(0, 0, 0, 0.07) 8px 8px 10px,
@@ -245,7 +251,7 @@ h3 {
 
 
 
-.order-cart img {
+.order-card img {
     width: 15rem;
     filter: drop-shadow(rgba(0, 0, 0, 0.238) 0 10px 10px);
 }
@@ -255,11 +261,112 @@ h4 {
     color: var(--lead);
 }
 
-.order-cart .price {
+.order-card .price {
     font-size: 1.5rem;
     color: var(--gold);
     padding: 1.3rem 0 1.2rem 0;
 }
+
+/* CART STYLING */
+.cart-tab{
+    background-color: var(--hintyellow);
+    position: fixed;
+   inset: 0 -500px 0 auto;
+   width: 23rem;
+   padding-block: 3rem;
+   display: flex;
+   flex-direction: column;
+   justify-content:center;
+   align-items: center;
+   z-index: 99;
+   box-shadow: rgba(0, 0, 0, 0.1) -10px -10px 20px;
+}
+.cart-tab-active{
+     inset: 0 0 0 auto;
+}
+
+.cart-list{
+    flex: 1;
+    width: 100%;
+    margin-top: 1.5rem;
+    overflow: auto;
+}
+
+.cart-list .item:nth-child(even){
+    background-color: var(--eyeball);
+}
+.cart-list::-webkit-scrollbar{
+    width: 0;
+}
+.total-container{
+    background-color: var(--gold);
+   width: 100%;
+   text-align: center;
+   padding-block: 1rem;
+   margin-block: 1rem;
+
+}
+.total-container h4{
+    display: inline-block;
+    font-size: 1.3rem;
+    font-weight: 300;
+}
+
+.btn-container .btn{
+    background-color: var(--lead);
+    transition: .3s ease-in-out;
+
+}
+.btn-container .btn:hover{
+    background-color: var(--gold);
+    color: var(--lead);
+}
+
+.item{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    
+
+}
+.item .item-image img{
+    width: 5rem;
+
+}
+.item h4{
+    font-size: .9rem;
+    color: var(--lead);
+   
+    font-weight: 500;
+   
+    
+}
+.item .item-total{
+    font-weight: 300;
+}
+
+.quantity-btn{
+    width: 1.7rem;
+    aspect-ratio: 1;
+    background-color: var(--lead);
+    color: var(--purewhite);
+    text-align: center;
+    border-radius: 80%;
+    line-height: 1.7rem;
+}
+.quantity-value{
+    font-size: 1.5rem;
+    margin: 0 .9rem;
+    font-weight:400;
+
+
+}
+
+
+
+
+
+
 
 /* SECTION 03 */
 
@@ -272,6 +379,7 @@ h4 {
 .review-container {
     width: 650px;
     max-width: 100%;
+    flex: 1;
 
 }
 

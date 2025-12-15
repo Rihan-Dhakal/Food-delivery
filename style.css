@@ -328,10 +328,16 @@ h4 {
     display: flex;
     align-items: center;
     gap: 1rem;
+    transition: all .4s ease-in-out;
     
-
 }
-.item .item-image img{
+
+.item-slide-out{
+    transform: translateX(50%);
+}
+
+
+.item img{
     width: 5rem;
 
 }
@@ -592,9 +598,10 @@ input[type='email']:focus{
 
     }
 
-    .mobile.menu-js {
+    .mobile-menu-js {
         left: 50%;
         transform: translateX(-50%);
+        background-color: var(--purewhite);
     }
 
     /* SECTION STYLING */
